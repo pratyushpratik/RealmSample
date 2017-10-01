@@ -14,6 +14,12 @@
 		A3779BB21F80D15E0040412A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3779BB01F80D15E0040412A /* LaunchScreen.storyboard */; };
 		A3779BBD1F80D15E0040412A /* RealmSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3779BBC1F80D15E0040412A /* RealmSampleTests.swift */; };
 		A3779BC81F80D15E0040412A /* RealmSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3779BC71F80D15E0040412A /* RealmSampleUITests.swift */; };
+		A3779BD71F80D4DE0040412A /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3779BD51F80D4B50040412A /* Realm.framework */; };
+		A3779BD81F80D4DE0040412A /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A3779BD51F80D4B50040412A /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A3779BD91F80D4DE0040412A /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3779BD61F80D4B50040412A /* RealmSwift.framework */; };
+		A3779BDA1F80D4DE0040412A /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A3779BD61F80D4B50040412A /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A3779BDE1F80D5D50040412A /* RealmObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3779BDD1F80D5D50040412A /* RealmObjects.swift */; };
+		A3779BE01F80DDD20040412A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3779BDF1F80DDD20040412A /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A3779BDB1F80D4DE0040412A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A3779BDA1F80D4DE0040412A /* RealmSwift.framework in Embed Frameworks */,
+				A3779BD81F80D4DE0040412A /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A3779BA41F80D15E0040412A /* RealmSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3779BA71F80D15E0040412A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +68,10 @@
 		A3779BC31F80D15E0040412A /* RealmSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3779BC71F80D15E0040412A /* RealmSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmSampleUITests.swift; sourceTree = "<group>"; };
 		A3779BC91F80D15E0040412A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3779BD51F80D4B50040412A /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		A3779BD61F80D4B50040412A /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		A3779BDD1F80D5D50040412A /* RealmObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmObjects.swift; sourceTree = "<group>"; };
+		A3779BDF1F80DDD20040412A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3779BD91F80D4DE0040412A /* RealmSwift.framework in Frameworks */,
+				A3779BD71F80D4DE0040412A /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +130,10 @@
 				A3779BAE1F80D15E0040412A /* Assets.xcassets */,
 				A3779BB01F80D15E0040412A /* LaunchScreen.storyboard */,
 				A3779BB31F80D15E0040412A /* Info.plist */,
+				A3779BD51F80D4B50040412A /* Realm.framework */,
+				A3779BD61F80D4B50040412A /* RealmSwift.framework */,
+				A3779BDD1F80D5D50040412A /* RealmObjects.swift */,
+				A3779BDF1F80DDD20040412A /* TableViewCell.swift */,
 			);
 			path = RealmSample;
 			sourceTree = "<group>";
@@ -135,6 +166,8 @@
 				A3779BA01F80D15E0040412A /* Sources */,
 				A3779BA11F80D15E0040412A /* Frameworks */,
 				A3779BA21F80D15E0040412A /* Resources */,
+				A3779BDB1F80D4DE0040412A /* Embed Frameworks */,
+				A3779BDC1F80D4E60040412A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -254,11 +287,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A3779BDC1F80D4E60040412A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A3779BA01F80D15E0040412A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3779BDE1F80D5D50040412A /* RealmObjects.swift in Sources */,
+				A3779BE01F80DDD20040412A /* TableViewCell.swift in Sources */,
 				A3779BAA1F80D15E0040412A /* ViewController.swift in Sources */,
 				A3779BA81F80D15E0040412A /* AppDelegate.swift in Sources */,
 			);
@@ -428,11 +479,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3K6JQ87GJE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RealmSample",
+				);
 				INFOPLIST_FILE = RealmSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.RealmSample.RealmSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RealmSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -443,11 +498,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3K6JQ87GJE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RealmSample",
+				);
 				INFOPLIST_FILE = RealmSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.RealmSample.RealmSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RealmSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
